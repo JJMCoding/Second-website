@@ -1,0 +1,75 @@
+body {
+    background-image: linear-gradient(purple, blue);
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin: 0%;
+    padding: 0%;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    font-family: monospace;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    background-color: white;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    margin-left: 2em;
+    margin-right: 2em;
+    border-radius: 1em;
+    box-shadow: 2px 2px 2px 2px ;
+}
+
+.Content-right {
+    flex-direction: column;
+    padding-left: 2.5em;
+   
+}
+
+.Image-left {
+    align-content: center;
+    flex-direction: row;
+    
+}
+img{
+
+}
+
+.header {
+    font-size: 15px;
+    
+}
+
+.Accordian-item-header {
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    line-height: 1.5em;
+    
+}
+
+.Accordian-item-header::after {
+    content: "\002B";
+    position: absolute;
+    right: 14em;
+    font-size: 15px;
+    line-height: 1.5em;
+}
+
+.Accordian-item-header:active::after{
+    content: "\2212";
+}
+
+.Accordian-item-body {
+    display: none;
+}
+
+.Accordian-item-header:active + .Accordian-item-body {
+    display: block;
+}
